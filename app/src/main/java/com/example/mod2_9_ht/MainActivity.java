@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity{
         news.add(new New("Взрыв", R.drawable.img_5, 5));
 
         adapter = new Adapter(news, MainActivity.this);
-
         linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(adapter);

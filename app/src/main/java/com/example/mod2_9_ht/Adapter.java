@@ -56,11 +56,13 @@ public class Adapter extends RecyclerView.Adapter<Adapter.NewViewHolder>{
         holder.imageView.setImageResource(list.get(position).idImage);
         holder.count.setText(list.get(position).likes);
         holder.like.setOnClickListener(n -> {
+
             if (holder.like.isChecked()) {
                 list.get(position).l += 1;
                 list.get(position).likes = String.valueOf(list.get(position).l);
                 holder.count.setText(list.get(position).likes);
             }
+
             if (!holder.like.isChecked()) {
                 list.get(position).l -= 1;
                 list.get(position).likes = String.valueOf(list.get(position).l);
