@@ -62,7 +62,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.NewViewHolder>{
                 list.get(position).likes = String.valueOf(list.get(position).l);
                 holder.count.setText(list.get(position).likes);
             }
-
             if (!holder.like.isChecked()) {
                 list.get(position).l -= 1;
                 list.get(position).likes = String.valueOf(list.get(position).l);
